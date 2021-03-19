@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+body {
+  font-family: "Do Hyeon", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#content{
+    min-width: 1050px;
+    position: relative;
+    margin: 0 auto;
+    width:0;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;   /* input 박스 width:100% 했을 때 튀어나가는거 없애기 */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.layout-header {
+  padding: 0 50px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+.header-tit {
+  position: relative;
+  height: 63px;
+  width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-tit .logo {
+    margin-top:0
+}
+
+.header-accounts-nav {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.accounts-nav {
+  float: right;
+  margin: 0;
+}
+
+.accounts-nav .menu-list {
+  position: relative;
+  z-index: 400;
+  float: left;
+}
+
+.link_menu {
+  float: left;
+  height: 37px;
+  padding: 0 10px 0 10px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.header-accounts-nav:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.menu-list:after{
+    content: "";
+    float: right;
+    width: 1px;
+    height: 13px;
+    margin-top: 12px;
+    background-color: #d8d8d8;
+}
+
