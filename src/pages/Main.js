@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/css/main.css";
-import { Link } from "react-router-dom";
+import ChooseFood from "../components/ChooseFood";
+
+const FoodCategory = [
+  { id: 1, name: "한식" },
+  { id: 2, name: "중식" },
+  { id: 3, name: "일식" },
+  { id: 4, name: "양식" },
+];
+
+const categoryList = FoodCategory.map((name) => (
+  <li key={name.id} className="group-name">
+    <span className="name">{name.name}</span>
+  </li>
+));
 
 const MainApp = () => {
   return (
@@ -8,28 +21,10 @@ const MainApp = () => {
       <div className="content-step1">
         <h2 className="food-tit">음식을 선택해주세요</h2>
         <div className="food-group">
-          <ul className="food-category">
-            <li className="group-name">
-              <Link to="#">
-                <span className="name">한식</span>
-              </Link>
-            </li>
-            <li className="group-name">
-              <Link to="#">
-                <span className="name">중식</span>
-              </Link>
-            </li>
-            <li className="group-name">
-              <Link to="#">
-                <span className="name">일식</span>
-              </Link>
-            </li>
-            <li className="group-name">
-              <Link to="#">
-                <span className="name">양식</span>
-              </Link>
-            </li>
-          </ul>
+          <ul className="food-category">{categoryList}</ul>
+        </div>
+        <div className="content-step2">
+          <ChooseFood />
         </div>
       </div>
     </div>

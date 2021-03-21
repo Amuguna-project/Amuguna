@@ -36,6 +36,7 @@
   height: 50px;
   border:1px solid black;
   margin-right:10px;
+  cursor: pointer;
 }
 
 .food-category{
@@ -46,4 +47,30 @@
     width:100%;
     height:100%;
     line-height:50px;
+}
+
+/* ChooseFood */
+
+.content-step2{
+  width:600px;
+  margin:0 auto;
+}
+
+.food-list{
+  overflow:hidden;
+  width:600px;
+}
+
+.food-list .list{
+  overflow:hidden;
+  width:600px;
+}
+
+.food-list .list li{
+  float: left;
+  width:150px;
+  height:150px;
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
