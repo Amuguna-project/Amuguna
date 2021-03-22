@@ -9,13 +9,23 @@ const FoodCategory = [
   { id: 4, name: "양식" },
 ];
 
-const categoryList = FoodCategory.map((name) => (
-  <li key={name.id} className="group-name">
-    <span className="name">{name.name}</span>
-  </li>
-));
-
 const MainApp = () => {
+  const [value, setValue] = useState(0);
+
+  const categoryList = FoodCategory.map((name) => (
+    <li key={name.id} className="group-name">
+      <span
+        className="name"
+        onClick={() => {
+          setValue(name.id);
+          console.log(value);
+        }}
+      >
+        {name.name}
+      </span>
+    </li>
+  ));
+
   return (
     <div className="main-content">
       <div className="content-step1">
@@ -24,7 +34,7 @@ const MainApp = () => {
           <ul className="food-category">{categoryList}</ul>
         </div>
         <div className="content-step2">
-          <ChooseFood />
+          <ChooseFood value={value} />
         </div>
       </div>
     </div>

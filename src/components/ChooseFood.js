@@ -1,4 +1,5 @@
 import React from "react";
+import StartList from "./StartList";
 
 const koreaFood = [
   { id: 1, name: "한식1" },
@@ -28,20 +29,54 @@ const americaFood = [
   { id: 4, name: "양식4" },
 ];
 
-const koreaList = koreaFood.map((name) => <li key={name.id}>{name.name}</li>);
-
-const chinaList = chinaFood.map((name) => <li key={name.id}>{name.name}</li>);
-
-const japenList = japenFood.map((name) => <li key={name.id}>{name.name}</li>);
-
-const americaList = americaFood.map((name) => (
-  <li key={name.id}>{name.name}</li>
+const koreaList = koreaFood.map((name) => (
+  <li key={name.id}>
+    <span>{name.name}</span>
+  </li>
 ));
 
-const ChooseFood = () => {
+const chinaList = chinaFood.map((name) => (
+  <li key={name.id}>
+    <span>{name.name}</span>
+  </li>
+));
+
+const japenList = japenFood.map((name) => (
+  <li key={name.id}>
+    <span>{name.name}</span>
+  </li>
+));
+
+const americaList = americaFood.map((name) => (
+  <li key={name.id}>
+    <span>{name.name}</span>
+  </li>
+));
+
+
+
+const ChooseFood = ({ value }) => {
+  let showFoodList;
+
+  if (value === 1) {
+    showFoodList = koreaList;
+    console.log(showFoodList)
+  }
+  if (value === 2) {
+    showFoodList = chinaList;
+  }
+  if (value === 3) {
+    showFoodList = japenList;
+  }
+  if (value === 4) {
+    showFoodList = americaList;
+  }
+
   return (
     <div className="food-list">
-      <ul className="list">{koreaList}</ul>
+      <ul className="list">{value === 0 ? 
+        <StartList />
+       :showFoodList}</ul>
     </div>
   );
 };

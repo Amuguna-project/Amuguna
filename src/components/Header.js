@@ -12,9 +12,9 @@ const HeaderApp = () => {
             </Link>
           </li>
           <li className="menu-list">
-            <a href={() => false} className="link_menu">
+            <Link to="/login" className="link_menu">
               회원가입
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
