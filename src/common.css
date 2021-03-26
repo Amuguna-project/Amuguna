@@ -9,6 +9,11 @@ ul {
   list-style: none;
 }
 
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 #content {
   min-width: 1050px;
   position: relative;
@@ -102,10 +107,16 @@ a:hover {
   width: 1050px;
   margin: 0 auto;
   padding-bottom: 60px;
-  border-top: 1px solid black;
+  
 }
 
 .inner_footer {
   padding-bottom: 20px;
   text-align: center;
+}
+
+/* main */
+
+#main{
+  overflow:hidden;
 }

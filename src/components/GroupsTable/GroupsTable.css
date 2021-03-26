@@ -1,0 +1,24 @@
+.groups-table {
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.groups-table .table-list table {
+  width: 100%;
+}
+
+.groups-table .table-list table th {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.groups-table .table-list table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.groups-table .table-list table tr:nth-child(even) > td {
+  background-color: #f9f9f9;
+}

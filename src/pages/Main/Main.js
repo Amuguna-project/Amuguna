@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../components/css/main.css";
-import ChooseFood from "../components/ChooseFood";
+import "../../components/css/main.css";
+import ChooseFood from "../../components/ChooseFood";
 
 const FoodCategory = [
   { id: 1, name: "한식" },
@@ -11,7 +11,6 @@ const FoodCategory = [
 
 const MainApp = () => {
   const [value, setValue] = useState(0);
-
   const categoryList = FoodCategory.map((name) => (
     <li key={name.id} className="group-name">
       <span

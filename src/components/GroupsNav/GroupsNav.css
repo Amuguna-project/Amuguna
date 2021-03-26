@@ -1,0 +1,24 @@
+.groups-nav {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 80px;
+}
+
+.groups-nav-list li {
+  float: left;
+}
+
+.groups-nav-list li a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #555;
+  font-size: 13px;
+}
+
+.groups-nav-list li a:hover{
+    cursor:pointer;
+    background-color:rgb(228, 228, 228);
+
+}
