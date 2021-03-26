@@ -2,6 +2,7 @@
   overflow: hidden;
   width: 800px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .groups-table .table-list table {
@@ -15,8 +16,9 @@
 }
 
 .groups-table .table-list table td {
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ddd;
+  font-size:15px;
 }
 
 .groups-table .table-list table tr:nth-child(even) > td {

@@ -21,7 +21,7 @@ const GroupsTable = () => {
               <td>
                 <a href={() => false}>leeDoHyun</a>
               </td>
-              <td>10</td>
+              <td>1/10</td>
             </tr>
             <tr>
               <td>
@@ -30,7 +30,7 @@ const GroupsTable = () => {
               <td>
                 <a href={() => false}>leeDoHyun</a>
               </td>
-              <td>10</td>
+              <td>1/10</td>
             </tr>
             <tr>
               <td>
@@ -39,7 +39,7 @@ const GroupsTable = () => {
               <td>
                 <a href={() => false}>leeDoHyun</a>
               </td>
-              <td>10</td>
+              <td>1/10</td>
             </tr>
             <tr>
               <td>
@@ -48,7 +48,7 @@ const GroupsTable = () => {
               <td>
                 <a href={() => false}>leeDoHyun</a>
               </td>
-              <td>10</td>
+              <td>1/10</td>
             </tr>
           </tbody>
         </table>
