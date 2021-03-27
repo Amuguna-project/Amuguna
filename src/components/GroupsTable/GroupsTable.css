@@ -19,6 +19,7 @@
   padding: 10px;
   border: 1px solid #ddd;
   font-size:15px;
+  cursor:pointer;
 }
 
 .groups-table .table-list table tr:nth-child(even) > td {

@@ -87,13 +87,7 @@
     vertical-align: 0;
 }
 
-body #wrap .show{
-    display:block;
-}
 
-.hide{
-    display:none;
-}
 
 .btn{
     display: inline-block;

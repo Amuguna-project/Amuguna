@@ -11,12 +11,14 @@ const FoodCategory = [
 
 const MainApp = () => {
   const [value, setValue] = useState(0);
+  const [display, setDisplay] = useState(true)
   const categoryList = FoodCategory.map((name) => (
     <li key={name.id} className="group-name">
       <span
         className="name"
         onClick={() => {
           setValue(name.id);
+          setDisplay(false)
           console.log(value);
         }}
       >
@@ -25,11 +27,15 @@ const MainApp = () => {
     </li>
   ));
 
+  
+
+
+
   return (
     <div className="main-content">
       <div className="content-step1">
         <h2 className="food-tit">음식을 선택해주세요</h2>
-        <div className="food-group">
+        <div className={ `food-group ${display ? "show" : "hide"}`}>
           <ul className="food-category">{categoryList}</ul>
         </div>
         <div className="content-step2">
