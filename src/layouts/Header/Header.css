@@ -1,48 +1,42 @@
 #header {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: #24292e;
   border: 1px solid rgba(0, 0, 0, 0.03);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 9999;
+  color: #fff;
 }
 
 #header .inner {
-  width: 100%;
   height: 60px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  min-width: 1170px;
 }
 
 #header .inner .left {
-  display: flex;
-  align-items: center;
-  padding-left:100px;
+    width: 350px;
+    text-align: center;
 }
 
-#header .inner .left .search_container {
-  width: 380px;
-  height: 23px;
-  background: #fff;
-  position: relative;
-  margin-left: 20px;
+.game-list{
+    margin-left: 200px;
 }
 
-#header .inner .left button {
-  position: absolute;
-  right: -29px;
-  padding: 4px 10px;
-  top: 63%;
-  transform: translateY(-50%);
-  border: none;
-  background: transparent;
+.game-list li{
+    float: left;
+    padding: 0 30px;
 }
 
-#search {
-  border: none;
-  border-radius: 3px;
-  width: 100%;
-  padding: 5px 10px;
+.accounts-list{
+    padding-right:50px;
+}
+
+.accounts-list li{
+    float: left;
+    padding:0 15px;
 }
