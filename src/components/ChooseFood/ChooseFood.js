@@ -1,5 +1,6 @@
 import React from "react";
-import StartList from "./StartList";
+import "./ChooseFood.css";
+import StartList from "components/StartList/StartList";
 
 const koreaFood = [
   { id: 1, name: "한식1" },
@@ -53,14 +54,12 @@ const americaList = americaFood.map((name) => (
   </li>
 ));
 
-
-
 const ChooseFood = ({ value }) => {
   let showFoodList;
 
   if (value === 1) {
     showFoodList = koreaList;
-    console.log(showFoodList)
+    console.log(showFoodList);
   }
   if (value === 2) {
     showFoodList = chinaList;
@@ -74,9 +73,7 @@ const ChooseFood = ({ value }) => {
 
   return (
     <div className="food-list">
-      <ul className="list">{value === 0 ? 
-        <StartList />
-       :showFoodList}</ul>
+      <ul className="list">{value === 0 ? <StartList /> : showFoodList}</ul>
     </div>
   );
 };

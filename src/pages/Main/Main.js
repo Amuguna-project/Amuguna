@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../../components/css/main.css";
-import ChooseFood from "../../components/ChooseFood";
+import "./Main.css";
+import ChooseFood from "components/ChooseFood/ChooseFood";
 
 const FoodCategory = [
   { id: 1, name: "한식" },

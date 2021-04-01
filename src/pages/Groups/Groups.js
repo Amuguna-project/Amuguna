@@ -1,6 +1,6 @@
 import React from "react";
-import GroupsNav from "../../components/GroupsNav/GroupsNav";
-import GroupsTable from "../../components/GroupsTable/GroupsTable";
+import GroupsNav from "components/GroupsNav/GroupsNav";
+import GroupsTable from "components/GroupsTable/GroupsTable";
 
 const GroupsApp = () => {
 

@@ -1,0 +1,30 @@
+.content-step2{
+    width:600px;
+    margin:0 auto;
+    padding-top:50px;
+  }
+  
+  .food-list{
+    overflow:hidden;
+    width:600px;
+  }
+  
+  .food-list .list{
+    overflow:hidden;
+    width:600px;
+  }
+  
+  .food-list .list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #e9e8ed;
+    float: left;
+    width:150px;
+    height:150px;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow:1px 1px 1px 1px #999;
+  }
