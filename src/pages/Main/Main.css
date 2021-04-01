@@ -1,18 +1,21 @@
+
+
+
 .main-content {
   text-align: center;
 }
 
 .content-step1 {
-  width: 970px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
   margin-right: auto;
   margin-left: auto;
   padding-top: 60px;
 }
 
-.food-tit{
-    padding-bottom:30px;
+.food-tit {
+  padding-bottom: 30px;
 }
 
 .food-group {
@@ -30,32 +33,29 @@
 }
 
 .group-name {
-  display:inline-block;
+  display: inline-block;
   width: 190px;
   height: 180px;
-  border:2px solid black;
-  margin-right:10px;
+  border: 2px solid black;
+  margin-right: 10px;
   cursor: pointer;
-  margin-top:10px;
-  border-radius:20px;
-
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
-.group-name:hover{
+.group-name:hover {
   background-color: #e9e8ed;
-  box-shadow:1px 1px 1px 1px #999;
+  box-shadow: 1px 1px 1px 1px #999;
 }
 
-.food-category{
-    overflow: hidden;
+.food-category {
+  overflow: hidden;
 }
-.name{
-    display:flex;
-    width:100%;
-    height:100%;
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
+.name {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
 }
-
-

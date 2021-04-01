@@ -3,6 +3,9 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: #e9ebee;
+  padding-top:60px;
+  padding-left: 350px;
 }
 
 ul {
@@ -52,6 +55,8 @@ a:hover {
 
 }
 
-
+#main{
+  padding-top:100px;
+}
 
 

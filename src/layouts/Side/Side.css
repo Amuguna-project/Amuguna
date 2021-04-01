@@ -1,0 +1,9 @@
+#side {
+    width: 350px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+}
