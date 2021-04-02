@@ -8,6 +8,7 @@
     background-color: #f6f8fa;
     padding: 20px 60px;
     border-radius: 25px;
+    z-index:9999
 }
 
 .side-head .tit{

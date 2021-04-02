@@ -1,8 +1,8 @@
 .groups-nav {
   overflow: hidden;
-  margin: 0 auto;
   width: 800px;
   padding-bottom: 20px;
+  margin:0 auto;
 }
 
 .groups-nav-list li {
