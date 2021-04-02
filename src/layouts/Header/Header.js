@@ -17,7 +17,7 @@ const Header = () => {
 
           <li>음식 룰렛</li>
 
-          <li>음식 월드컵</li>
+          <li><Link to="/choosefoodmain"> 음식 월드컵</Link></li>
 
           <li><Link to="/groups"> 전체 그룹 보기</Link></li>
         </ul>
